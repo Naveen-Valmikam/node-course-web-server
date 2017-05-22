@@ -49,6 +49,13 @@ app.get('/about',(req,response)=>{
     });
 
 
+app.get('/projects',(req,response)=>{
+    response.render('projects.hbs',{
+        pageTitle:'Portfolio Page'
+    }
+        )
+    });
+
 app.get('/bad',(req,res)=>{
     res.send({ err:'Request cannot be processed'});
 })
